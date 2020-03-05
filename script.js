@@ -6,9 +6,39 @@ const progress = document.getElementById('progress')
 const timestamp = document.getElementById('timestamp')
 const timestampDown = document.getElementById('timestampDown')
 
+// Play & pause video
+function toggleVideoStatus() {
+    return true
+}
+
+//update play/pause icon
+function updatePlayIcon() {
+    return true
+}
+
+//update progress & timestamp
+function updateProgress() {
+    return true
+}
+
+//Set video time to progress bar
+function setVideoProgress() {
+    return true
+}
+
+//Stop video
+function stopVideo() {
+    return true
+}
 
 //Event listeners
 video.addEventListener('click', toggleVideoStatus)
 video.addEventListener('pause', updatePlayIcon)
 video.addEventListener('play', updatePlayIcon)
 video.addEventListener('timeupdate', updateProgress)
+
+play.addEventListener('click', toggleVideoStatus)
+
+stop.addEventListener('click', stopVideo)
+
+progress.addEventListener('change', setVideoProgress)
