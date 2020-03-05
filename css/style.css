@@ -89,9 +89,13 @@ h1{
   font-size: 14px;
 }
 
-@media(max-widt: 800px) {
+@media(max-width: 800px) {
   .screen,
   .controls{
     width: 90%;
   }
+}
+
+.full_screen{
+  width: 100%;
 }
